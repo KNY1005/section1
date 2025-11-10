@@ -30,7 +30,12 @@
     "strict": true,
 
     //컴파일시 생성되는 js파일에 export(): 이 자동으로 생성됨
-    //export(); = 독립된 파일로 만들어줌
-    "moduleDetection": "force"
+    //export(); = 모든 스크립트 파일을 개별 모듈로 만들어줌
+    "moduleDetection": "force",
+
+    //.d.ts = 확장자를 갖는 파일을 의미
+    //타입 정의 파일의 타입 검사를 생략하는 옵션
+    //불필요한 타입 정의 파일의 타입 검사 생략
+    "skipLibCheck": true
   }
 }
