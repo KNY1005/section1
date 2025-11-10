@@ -1,0 +1,36 @@
+{
+  // 인클루드 옵션
+  // 모든 파일을 동시에 컴파일
+  // 너가 컴파일할 곳은 src 폴더야! 해주는 것
+  "includs":["src"],
+
+  "compilerOptions": {
+
+
+    //옛날 브라우저에서도 돌아가게 하기위해 타겟옵션 적용
+    //esnest 자바스크립트 최신버전을 의미함
+    "target" : "ESNext",
+
+    //컴파일시 js파일이 함수 표현식으로 나옴
+    // "target": "es5"
+
+    //
+    //"module": "commonjs"
+    
+    //
+    "module": "esnext",
+
+    //컴파일시 생성되는 js파일을 어디에 위치할지 
+    //실행하면 "dist"폴더가 생성됨
+    "outDir": "dist",
+
+    //엄격한 타입검사 옵션
+    //매개변수 타입은 추론할 수 없기 때문에 오류 발생
+    //false로 설정하면 오류없어짐
+    "strict": true,
+
+    //컴파일시 생성되는 js파일에 export(): 이 자동으로 생성됨
+    //export(); = 독립된 파일로 만들어줌
+    "moduleDetection": "force"
+  }
+}
